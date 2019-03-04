@@ -1,0 +1,13 @@
+.addContainer{
+    text-align: center;
+    margin-top:20px;
+    width:280px;
+    padding: 10px;
+    color: #667279;
+    cursor: pointer;
+}
+.addContainer img{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
