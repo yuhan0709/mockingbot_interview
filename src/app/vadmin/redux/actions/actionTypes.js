@@ -1,0 +1,9 @@
+export const User = {
+  SET_USER: 'SET_USER',
+  CLEAR_USER: 'CLEAR_USER',
+};
+
+export const Business = {
+  SET_BUSINESS_LIST: 'SET_BUSINESS_LIST',
+  CLEAR_BUSINESS_LIST: 'CLEAR_BUSINESS_LIST',
+};

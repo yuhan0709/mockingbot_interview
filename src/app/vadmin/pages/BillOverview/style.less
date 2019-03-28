@@ -1,0 +1,73 @@
+.container {
+  :global(.content-box):last-child {
+    padding-bottom: 50px;
+  }
+}
+.payCountContainer {
+  // display: flex;
+  margin-bottom: 20px;
+  .counttip {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100px;
+  }
+  .nodatatip {
+    background: #aaa;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    > div {
+      background: white;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+      border-radius: inherit
+    }
+  }
+}
+.payRank {
+  width: 100%;
+  > div {
+    width: 100%;
+    .productgroup, .price {
+      word-break: break-word;
+    }
+    .price {
+      text-align: right
+    }
+  }
+}
+.tip {
+  color: #999;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.realtime-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 180px;
+  margin-bottom: 20px;
+  > div {
+    >div {
+      text-align: center;
+    }
+  }
+  .count {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .number {
+    font-size: 36px;
+  }
+}
+.nodatatip {
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

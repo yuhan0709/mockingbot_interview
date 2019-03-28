@@ -1,0 +1,58 @@
+.markdownPreview {
+  // 轮播图
+  :global {
+    .ant-carousel .slick-slide {
+      text-align: center;
+      height: 160px;
+      line-height: 160px;
+      background: #364d79;
+      overflow: hidden;
+    }
+    .ant-carousel .slick-slide h3 {
+      color: #fff !important;
+    }
+
+    .mixin-react {
+      background-color: white !important;
+      padding: 16px 0 !important;
+    }
+
+    // 图标
+    pre code[class="lang-mixin-react"] {
+      color: initial;
+    }
+    pre code[class="language-mixin-react"] {
+      color: initial;
+    }
+
+    // 播放器
+    .xgplayer-start svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    // 弹框
+    .tui-popup-modal-background {
+      z-index: 999 !important;
+    }
+
+    // 锚点
+    a.header-anchor {
+      font-size: 0.85em;
+      float: left;
+      //margin-left: -0.87em;
+      padding-right: 0.23em;
+      margin-top: 0.125em;
+      opacity: 0;
+      padding: 0;
+      width: 0;
+      &:hover {
+        text-decoration: none;
+        opacity: 1;
+        padding-right: 3.96px;
+        width: 10px;
+      }
+    }
+  }
+}

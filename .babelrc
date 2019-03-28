@@ -1,0 +1,20 @@
+{
+  "env": {
+    "server": {
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "syntax-dynamic-import"
+      ],
+      "presets": [
+        "react",
+        ["env", {
+          "targets": {
+            "node": "8.11.3"
+          }      
+        }]
+      ]
+    }
+  }
+}

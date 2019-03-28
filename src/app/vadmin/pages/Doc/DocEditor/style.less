@@ -1,0 +1,159 @@
+.directory {
+  .batch {
+    //display: flex;
+    //justify-content: space-between;
+    width: 90%;
+    .name {
+      position: relative;
+      top: 10px;
+      overflow: hidden;
+      word-break: break-all;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-size: 22px;
+      margin: 0;
+      color: #000;
+      text-shadow: #c8c8c8 1px 1px 2px;
+      text-align: left;
+      line-height: 1.7em;
+      font-weight: 100;
+    }
+  }
+  section {
+    overflow: auto;
+    height: 78vh;
+  }
+  .add-title {
+    width: 45%;
+    margin-right: 10px;
+  }
+  .node-btns {
+    button {
+      opacity: 0;
+      height: auto;
+      border: none;
+      background-color: transparent;
+      padding: 0 4px !important;
+      transition: all .3s;
+    }
+  }
+  :global(.ant-tree-node-content-wrapper:hover) {
+    background-color: red;
+    .node-btns button {
+      opacity: 1;
+    }
+  }
+  // 屏蔽拖动中间的效果
+  //:global(.ant-tree li.drag-over span[draggable]) {
+  //  background-color: transparent;
+  //  color: inherit;
+  //  opacity: 1;
+  //  cursor: no-drop !important;
+  //}
+}
+
+.operator {
+  .desc {
+    margin: 10px 0;
+    span {
+      font-size: 12px;
+    }
+  }
+  .button-group {
+    text-align: right;
+    button {
+      margin: 10px;
+    }
+    button:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.editor {
+  height: calc(100vh - 288px);
+  position: relative;
+  .loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5)
+  }
+  :global(.ant-divider-horizontal) {
+    margin: 12px 0;
+  }
+  :global(.ant-form-item) {
+    margin-bottom: 0;
+  }
+  :global(.ant-card-body) {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+}
+
+.control {
+  margin-right: 10px;
+}
+
+.controlRed {
+  margin-right: 10px;
+  color: red;
+}
+
+.preview {
+  min-height: 400px;
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  cursor: not-allowed;
+}
+
+.doc-header {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 10px;
+  margin: 0 auto 16px auto !important;
+  > h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #000;
+    font-family: 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif' !important;
+  }
+  > div {
+    font-size: 16px;
+  }
+}
+
+.network-error-modal {
+  :global(.anticon) {
+    color: red;
+  }
+}
+
+.local-document {
+  button {
+    margin: 5px 10px;
+  }
+  button:last-child {
+    margin-right: 0;
+  }
+}
+.publsh-row {
+  margin: 10px 0;
+  > * {
+    margin-right: 10px;
+  }
+}
